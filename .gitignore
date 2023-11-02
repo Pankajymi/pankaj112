@@ -1,48 +1,52 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# Prerequisites
+*.d
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
 
-# Configuration
-wp-config.php
+# Linker output
+*.ilk
+*.map
+*.exp
 
-# Example themes
-/wp-content/themes/twenty*/
+# Precompiled Headers
+*.gch
+*.pch
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
 
-# Uploads
-/wp-content/uploads/
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
-# Log files
-*.log
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
 
-# htaccess
-/.htaccess
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
